@@ -1,0 +1,128 @@
+/* Custom styles for the Innovative Wallet navbar */
+
+/* Ensures equal spacing across the navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Distributes links across the navbar */
+    width: 100%; /* Full width for balance */
+}
+
+.navbar-nav .nav-link {
+    flex: 1; /* Equal space for each link */
+    text-align: center; /* Center-align each link's text */
+    color: #000; /* Link color */
+    padding: 10px 0; /* Padding for visual separation */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Center "About" link */
+.navbar-nav .mx-4 {
+    flex: 0; /* Overrides flex property to fix width for centered item */
+    font-weight: bold; /* Optional: Emphasize center item */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Optional styling for hover effect */
+.navbar-light .nav-link:hover {
+    color: #007bff; /* Link color on hover */
+    text-decoration: underline; /* Optional underline on hover */
+}
+
+/* Full-width and 2/3 height for Jumbotron */
+#mainJumbotron {
+    width: 100vw; /* Full width */
+    height: 100vh; /* 100% of the viewport height */
+    margin: 0;
+    padding: 3rem;
+    box-sizing: border-box;
+    margin-top: 0; /* Adds a 10% height margin from the top */
+}
+
+#mainJumbotron h2, #mainJumbotron p, #mainJumbotron a {
+    color: #333; /* Text color, adjust as needed */
+}
+
+/* Container for images */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Set the height of your jumbotron */
+    overflow: hidden;
+}
+
+/* Style for the images */
+.fade-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container without stretching */
+    opacity: 0;
+    animation: fadeInOut 12s infinite;
+}
+
+/* Keyframes for fade-in/fade-out effect */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Timing for each image */
+.fade-image:nth-child(1) {
+    animation-delay: 0s; /* First image appears immediately */
+}
+
+.fade-image:nth-child(2) {
+    animation-delay: 3s; /* Second image starts after 3s */
+}
+
+.fade-image:nth-child(3) {
+    animation-delay: 6s; /* Third image starts after 6s */
+}
+
+.fade-image:nth-child(4) {
+    animation-delay: 9s; /* Fourth image starts after 9s */
+}
+
+/* Button Section */
+.d-flex {
+    position: absolute;
+    bottom: 20px;
+}
+
+.btn {
+    padding: 10px 2-px;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border-color: rgb(57, 57, 57);
+
+
+}
+/* Jumbotron positioning */
+#mainJumbotron {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 3vh; 
+}
