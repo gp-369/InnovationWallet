@@ -5,61 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics of Investing</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7faff; /* Soft blue background */
-            color: #333;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #004080;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+
         header {
-            background-color: #34495e;
+            background-color: #2f485c; /* Darker blue */
             color: white;
             padding: 20px;
             text-align: center;
+            font-size: 1.5em;
         }
-        nav {
-            text-align: center;
-            margin: 10px 0;
-        }
+
         nav a {
-            color: #34495e;
+            color: white;
             text-decoration: none;
-            font-size: 1.2em;
             margin: 0 15px;
+            font-size: 1.2em;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         main {
             padding: 20px;
             line-height: 1.6;
+            flex: 1; /* Makes sure the content area takes available space */
         }
+
         section {
             margin-bottom: 20px;
         }
-      footer {
+
+        ul {
+            padding-left: 40px;
+        }
+
+        footer {
             background-color: #003e71; /* Steel blue */
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: 20px;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            position: relative;
         }
+
         .home-button {
             display: block;
-            text-align: center;
             margin: 20px auto;
             padding: 10px 20px;
-            background-color: #34495e;
+            background-color: #2f485c;
             color: white;
+            text-align: center;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
         }
+
         .home-button:hover {
-            background-color: #2c3e50;
+            background-color: #003e71;
+        }
+
+        /* Home Button Styling */
+        .home-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Link in the center of the page */
+        .home-link {
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .home-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -67,6 +97,7 @@
     <header>
         Basics of Investing
     </header>
+
     <main>
         <section>
             <h2>What is Investing?</h2>
@@ -88,11 +119,14 @@
                 <li>Diversify your investments to minimize risks.</li>
             </ul>
         </section>
-    </main>
-  <div style="text-align: center;">
-        <a href="https://gp-369.github.io/InnovationWallet/" style="color: #004080; text-decoration: none; font-weight: bold;">Home</a>
-    </div>
 
+        <!-- Home Link -->
+        <div class="home-button-container">
+            <a href="https://gp-369.github.io/InnovationWallet/" class="home-link">Home</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
         &copy; 2024 Guadalupe Prado
     </footer>
