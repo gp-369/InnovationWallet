@@ -3,134 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Our Team</title>
+    <title>Team</title>
     <style>
         /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* Light blue background */
-            color: #004080; /* Dark blue text */
-        }
-
-        header {
-            background-color: #2f485c; /* Steel blue */
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.5em;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
+            background-color: #f0f8ff;
+            color: #333;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures footer is at the bottom of the page */
+        }
+
+        .team-container {
+            text-align: center;
+            padding: 50px;
+            flex: 1; /* Allows the container to take up available space */
+        }
+
+        .team-container h1 {
+            font-size: 3em;
+            color: #2f485c;
+            margin-bottom: 30px;
         }
 
         .team-member {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 250px;
-            margin: 15px;
+            display: inline-block;
             text-align: center;
+            margin-top: 30px;
+            width: 100%;
         }
 
         .team-member img {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 15px;
+            border: 5px solid #2f485c;
         }
 
-        .team-member h3 {
+        .team-member h2 {
+            font-size: 2em;
             color: #2f485c;
-            margin: 10px 0;
+            margin-top: 15px;
         }
 
         .team-member p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #333;
+            margin-top: 10px;
         }
 
         footer {
-            background-color: #003e71;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 40px;
-        }
-
-        .home-button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
             background-color: #2f485c;
             color: white;
             text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
+            padding: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
         }
 
-        .home-button:hover {
-            background-color: #003e71;
-        }
     </style>
 </head>
 <body>
-    <header>
-        Meet Our Team
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="articlesandguides.html">Articles and Guides</a>
-        <a href="assistanceprograms.html">Assistance Programs</a>
-        <a href="podcastsandvideos.html">Podcasts and Videos</a>
-        <a href="scholarships.html">Scholarships</a>
-    </nav>
 
-    <div class="container">
-        <!-- Team Member 1 (Guadalupe Prado) -->
+    <div class="team-container">
+        <h1>Meet the Team</h1>
+
+        <!-- Team Member -->
         <div class="team-member">
+            <!-- Replace 'your-photo-url.jpg' with the actual image URL or file path to your photo -->
             <img src="your-photo-url.jpg" alt="Guadalupe Prado">
-            <h3>Guadalupe Prado</h3>
-            <p>Email: <a href="mailto:gp369@njit.edu">gp369@njit.edu</a></p>
+            <h2>Guadalupe Prado</h2>
+            <p>Developer</p>
         </div>
-
-        <!-- Additional Team Members can be added below in the same format -->
-        <!-- Example: -->
-        <!--
-        <div class="team-member">
-            <img src="team-member-photo.jpg" alt="Team Member Name">
-            <h3>Team Member Name</h3>
-            <p>Email: <a href="mailto:team-member-email@domain.com">team-member-email@domain.com</a></p>
-        </div>
-        -->
-    </div>
-
-    <div style="text-align: center;">
-        <a href="index.html" class="home-button">Back to Homepage</a>
     </div>
 
     <footer>
         &copy; 2024 Guadalupe Prado
     </footer>
+
 </body>
 </html>
