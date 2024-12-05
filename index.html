@@ -108,6 +108,45 @@
     transition: background-color 0.3s ease-in-out;
 }
 
+/* Jumbotron Section */
+#mainJumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make the jumbotron take up the full viewport height */
+    overflow: hidden; /* Hide overflow if images extend beyond the viewport */
+}
+
+/* Image container to display images at full size */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Make the images cover the space while maintaining aspect ratio */
+.fade-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+}
+
+/* Optional: Ensure text and buttons are centered and readable */
+.jumbotron {
+    z-index: 1; /* Ensure buttons appear above the images */
+}
+
+/*menu bar to the left*/
+.navbar-toggler {
+    margin-left: -20px; 
+}
+
+
 
     </style>
 </head> 
@@ -116,12 +155,14 @@
         <h1 class="display-4">The Innovative Wallet</h1>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="fas fa-bars"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="custom-hamburger-icon"></div>
+                    </button>
 
+                    <a class="navbar-brand" href="#">MENU</a> 
+                   
             <div class="collapse navbar-collapse w-100" id="navbarNav">
                 <div class="navbar-nav">
                     <div class="left">
@@ -216,15 +257,16 @@
             </div>
         </div>
     </nav>
+
 <!-- Jumbotron Section -->
 <div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center bg-light" id="mainJumbotron">
 
     <!-- Collage section -->
      <div class="image-container">
-        <img src="images/excited-businessman-raising-his-arms-against-sky-min-min.jpg" alt="businessman raising hands in sky" class="img-fluid fade-image">
-        <img src="images/business-concept-with-lightbulb-min.jpg" alt="business concept lightbulb" class="img-fluid fade-image">
-        <img src="images/flat-lay-top-view-office-table-desk-workspace-background-min-min.jpg" alt="workspace" class="img-fluid fade-image"> 
-        <img src="images/young-man-raising-his-fists-air-min.jpg" alt="young man raising hand in the sky" class="img-fluid fade-image">
+        <img src="images/young-man-raising-his-fists-air.jpg" alt="businessman raising hands in sky" class="img-fluid fade-image">
+        <img src="images/business-concept-with-lightbulb.jpg"business concept lightbulb" class="img-fluid fade-image">
+        <img src="images/flat-lay-top-view-office-table-desk-workspace-background.jpg" alt="workspace" class="img-fluid fade-image"> 
+        <img src="images/excited-businessman-raising-his-arms-against-sky.jpg"young man raising hand in the sky" class="img-fluid fade-image">
      </div>
     
     <!-- Button Section -->
@@ -245,6 +287,9 @@
 </div>
 
     <!-- Link to Bootstrap JavaScript (for responsive toggling) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 </body>   
 </html>
