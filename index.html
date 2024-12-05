@@ -68,6 +68,29 @@
         .dropdown-menu {
             min-width: 200px;
         }
+
+        /* Adjust image container for responsiveness */
+        .image-container img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        /* Footer styling */
+        .footer {
+            margin-top: -20px;
+            padding: 10px;
+        }
+
+        /* Adjust buttons for mobile view */
+        .btn {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        /* Ensure images and content are responsive on mobile */
+        .jumbotron {
+            text-align: center;
+        }
     </style>
 </head> 
 <body>
@@ -79,125 +102,114 @@
     <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div class="navbar-nav w-100">
-                <!-- Left section for the first 3 topics -->
-                <div class="left">
-                    <!-- Dropdown for Credit & Debt Management -->
+            <a class="navbar-brand" href="#">The Innovative Wallet</a>
+            <!-- Navbar toggle button (hamburger menu) for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible navbar content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav w-100">
+                    <!-- Left section for the first 3 topics -->
+                    <div class="left">
+                        <!-- Dropdown for Credit & Debt Management -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="creditDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Credit & Debt Management</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="creditDropdown">
+                                <li><a class="dropdown-item" href="Credit & Debt Management/Understanding Credit/understandinghowcreditworks.html">Understanding How Credit Works</a></li>
+                                <li><a class="dropdown-item" href="Credit & Debt Management/Build Credit/howtobuildcredit.html">How to Build Credit</a></li>
+                                <li><a class="dropdown-item" href="Credit & Debt Management/Managing Debt/managingdebt.html">Managing Debt</a></li>
+                                <li><a class="dropdown-item" href="Credit & Debt Management/Types of Loans/typesofloans.html">Types of Loans</a></li>
+                                <li><a class="dropdown-item" href="Credit & Debt Management/Debt Repayment/debtpaymenetplansandresources.html">Debt Repayment Plans & Resources</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Dropdown for Budgeting & Saving -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="budgetingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Budgeting & Saving</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="budgetingDropdown">
+                                <li><a class="dropdown-item" href="Budgeting & Saving/creatingsimplebudget/creatingasimplebudget.html">Creating a Simple Budget</a></li>
+                                <li><a class="dropdown-item" href="Budgeting & Saving/emergency funds/emergencyfunds.html">Emergency Funds</a></li>
+                                <li><a class="dropdown-item" href="Budgeting & Saving/saving strategies/savingstrategies.html">Saving Strategies</a></li>
+                                <li><a class="dropdown-item" href="Budgeting & Saving/budgeting tools/budgetingtools.html">Budgeting Tools</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Dropdown for Investing -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="investingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Investing</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="investingDropdown">
+                                <li><a class="dropdown-item" href="basicsofinvesting.html">Basics of Investing</a></li>
+                                <li><a class="dropdown-item" href="safeinvestmentoptions.html">Safe Investment Options</a></li>
+                                <li><a class="dropdown-item" href="startwithzero.html">How to start with $50</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Center link (About) with Dropdown -->
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="creditDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Credit & Debt Management</strong>
+                        <a class="nav-link dropdown-toggle text-center center" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>About</strong>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="creditDropdown">
-                            <li><a class="dropdown-item" href="Credit & Debt Management/Understanding Credit/understandinghowcreditworks.html">Understanding How Credit Works</a></li>
-                            <li><a class="dropdown-item" href="Credit & Debt Management/Build Credit/howtobuildcredit.html">How to Build Credit</a></li>
-                            <li><a class="dropdown-item" href="Credit & Debt Management/Managing Debt/managingdebt.html">Managing Debt</a></li>
-                            <li><a class="dropdown-item" href="Credit & Debt Management/Types of Loans/typesofloans.html">Types of Loans</a></li>
-                            <li><a class="dropdown-item" href="Credit & Debt Management/Debt Repayment/debtpaymenetplansandresources.html">Debt Repayment Plans & Resources</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="About/mission/mission.html">Mission</a></li>
+                            <li><a class="dropdown-item" href="About/team/team.html">Team</a></li>
+                            <li><a class="dropdown-item" href="About/contact/contact.html">Contact</a></li>
                         </ul>
                     </div>
 
-                    <!-- Dropdown for Budgeting & Saving -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="budgetingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Budgeting & Saving</strong>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="budgetingDropdown">
-                            <li><a class="dropdown-item" href="Budgeting & Saving/creatingsimplebudget/creatingasimplebudget.html">Creating a Simple Budget</a></li>
-                            <li><a class="dropdown-item" href="Budgeting & Saving/emergency funds/emergencyfunds.html">Emergency Funds</a></li>
-                            <li><a class="dropdown-item" href="Budgeting & Saving/saving strategies/savingstrategies.html">Saving Strategies</a></li>
-                            <li><a class="dropdown-item" href="Budgeting & Saving/budgeting tools/budgetingtools.html">Budgeting Tools</a></li>
-                        </ul>
-                    </div>
+                    <!-- Right section for the last 3 topics -->
+                    <div class="right">
+                        <!-- Dropdown for Banking -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="bankingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Banking</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="bankingDropdown">
+                                <li><a class="dropdown-item" href="Banking/choosingrightbank/choosingtherightbank.html">Choosing the Right Bank</a></li>
+                                <li><a class="dropdown-item" href="Banking/typesofaccounts/typesofaccounts.html">Types of Accounts</a></li>
+                                <li><a class="dropdown-item" href="Banking/onlinebanking/onlinebanking.html">Online Banking</a></li>
+                                <li><a class="dropdown-item" href="Banking/avoidbankfees/avoidingbankfees.html">Avoiding Bank Fees</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- Dropdown for Investing -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="investingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Investing</strong>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="investingDropdown">
-                            <li><a class="dropdown-item" href="basicsofinvesting.html">Basics of Investing</a></li>
-                            <li><a class="dropdown-item" href="safeinvestmentoptions.html">Safe Investment Options</a></li>
-                            <li><a class="dropdown-item" href="startwithzero.html">How to start with $50</a></li>
-                        </ul>
-                    </div>
-                </div>
+                        <!-- Dropdown for Resources -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Resources</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item" href="Resources/articlesGuides.html">Articles & Guides</a></li>
+                                <li><a class="dropdown-item" href="Resources/assistanceprograms.html">Assistance Programs</a></li>
+                                <li><a class="dropdown-item" href="Resources/scholarships.html">Scholarships</a></li>
+                            </ul>
+                        </div>
 
-                <!-- Center link (About) with Dropdown -->
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-center center" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <strong>About</strong>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                        <li><a class="dropdown-item" href="About/mission/mission.html">Mission</a></li>
-                        <li><a class="dropdown-item" href="About/team/team.html">Team</a></li>
-                        <li><a class="dropdown-item" href="About/contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Right section for the last 3 topics -->
-                <div class="right">
-                    <!-- Dropdown for Banking -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="bankingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Banking</strong>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="bankingDropdown">
-                            <li><a class="dropdown-item" href="Banking/choosingrightbank/choosingtherightbank.html">Choosing the Right Bank</a></li>
-                            <li><a class="dropdown-item" href="Banking/typesofaccounts/typesofaccounts.html">Types of Accounts</a></li>
-                            <li><a class="dropdown-item" href="Banking/onlinebanking/onlinebanking.html">Online Banking</a></li>
-                            <li><a class="dropdown-item" href="Banking/avoidbankfees/avoidingbankfees.html">Avoiding Bank Fees</a></li>
-
-                        </ul>
-                    </div>
-
-                    <!-- Dropdown for Resources -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Resources</strong>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                            <li><a class="dropdown-item" href="Resources/articlesGuides.html">Articles & Guides</a></li>
-                            <li><a class="dropdown-item" href="Resources/assistanceprograms.html">Assistance Programs</a></li>
-                            <li><a class="dropdown-item" href="Resources/scholarships.html">Scholarships</a></li>
-
-                        </ul>
-                    </div>
-
-                    <!-- Dropdown for Entrepreneurship -->
-                    <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-center" href="#" id="entrepreneurshipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>Entrepreneurship</strong>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="entrepreneurshipDropdown">
-                            <li><a class="dropdown-item" href="Entrepreneurship/Starting a Business/startingabusiness.html">Starting a Business</a></li>
-                            <li><a class="dropdown-item" href="Entrepreneurship/Funding options 4 minorities/minorityentrepreneurs.html">Minority Entrepreneurs</a></li>
-                        </ul>
+                        <!-- Dropdown for Events -->
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-center" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Events</strong>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="Events/communityevents/communityevents.html">Community Events</a></li>
+                                <li><a class="dropdown-item" href="Events/webinars/webinars.html">Webinars</a></li>
+                                <li><a class="dropdown-item" href="Events/fundraising/fundraising.html">Fundraising Events</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-<!-- Jumbotron Section -->
-<div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center bg-light" id="mainJumbotron">
 
-    <!-- Collage section -->
-     <div class="image-container">
-        <img src="images/excited-businessman-raising-his-arms-against-sky-min-min.jpg" alt="businessman raising hands in sky" class="img-fluid fade-image">
-        <img src="images/business-concept-with-lightbulb-min.jpg" alt="business concept lightbulb" class="img-fluid fade-image">
-        <img src="images/flat-lay-top-view-office-table-desk-workspace-background-min-min.jpg" alt="workspace" class="img-fluid fade-image"> 
-        <img src="images/young-man-raising-his-fists-air-min.jpg" alt="young man raising hand in the sky" class="img-fluid fade-image">
-     </div>
-    
-    <!-- Button Section -->
-     <div class="d-flex justify-content-between w-75 mt-auto mb-4">
-        <a class="btn btn-primary btn-lg" href="#left" role="button">Tips</a>
-        <a class="btn btn-secondary btn-lg" href="#middle" role="button">Saving 4 for the Future!</a>
-        <a class="btn btn-success btn-lg" href="#right" role="button">Basics</a>
-    </div>
-</div>
-
-<!-- Copyright Section (1/3 portion) -->
-<div class="footer text-center" style="margin-top: -20px; padding: 10px;">
+    <!-- Add your content and footer as needed -->
+    <div class="footer text-center" style="margin-top: -20px; padding: 10px;">
     <div class="row">
         <div class="col-md-4">© Guadalupe 2024</div>
         <div class="col-md-4">Terms of Service</div>
@@ -205,8 +217,11 @@
     </div>
 </div>
 
-    <!-- Link to Bootstrap JavaScript (for responsive toggling) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
+
+
 
