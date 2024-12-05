@@ -11,9 +11,12 @@
             padding: 0;
             background-color: #fef5e7; /* Light peach background */
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full height */
         }
         header {
-            background-color: #d35400;
+            background-color: #d35400; /* Orange background */
             color: white;
             padding: 20px;
             text-align: center;
@@ -23,7 +26,7 @@
             margin: 10px 0;
         }
         nav a {
-            color: #d35400;
+            color: #d35400; /* Same orange color for links */
             text-decoration: none;
             font-size: 1.2em;
             margin: 0 15px;
@@ -34,12 +37,13 @@
         main {
             padding: 20px;
             line-height: 1.6;
+            flex: 1; /* Ensures the main content takes available space */
         }
         section {
             margin-bottom: 20px;
         }
         footer {
-            background-color: #a04000;
+            background-color: #a04000; /* Darker orange background */
             color: white;
             text-align: center;
             padding: 10px;
@@ -49,13 +53,14 @@
             text-align: center;
             margin: 20px auto;
             padding: 10px 20px;
-            background-color: #d35400;
+            background-color: #d35400; /* Orange background */
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
         }
         .home-button:hover {
-            background-color: #a04000;
+            background-color: #a04000; /* Darker orange on hover */
         }
     </style>
 </head>
@@ -84,6 +89,8 @@
             <p>Starting small builds confidence, creates habits, and allows you to learn without risking large amounts of money.</p>
         </section>
     </main>
+
+    <!-- Home Button near the footer -->
    <div style="text-align: center;">
         <a href="https://gp-369.github.io/InnovationWallet/" style="color: #004080; text-decoration: none; font-weight: bold;">Home</a>
     </div>
