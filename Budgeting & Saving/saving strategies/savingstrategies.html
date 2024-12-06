@@ -12,6 +12,9 @@
             padding: 0;
             background-color: #f0f8ff; /* Light blue background */
             color: #004080; /* Dark blue text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes up at least the full height of the page */
         }
 
         header {
@@ -36,6 +39,7 @@
         main {
             padding: 20px;
             line-height: 1.6;
+            flex: 1; /* Makes the main content take available space */
         }
 
         section {
@@ -51,9 +55,6 @@
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: 20px;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
 
@@ -101,7 +102,7 @@
         </section>
     </main>
 
- <div style="text-align: center;">
+    <div style="text-align: center;">
         <a href="https://gp-369.github.io/InnovationWallet/" style="color: #004080; text-decoration: none; font-weight: bold;">Home</a>
     </div>
 
@@ -110,3 +111,4 @@
     </footer>
 </body>
 </html>
+
