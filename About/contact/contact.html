@@ -10,7 +10,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-image: url('path-to-your-background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #333;
         }
 
@@ -20,18 +27,23 @@
             padding: 20px;
             text-align: center;
             font-size: 1.5em;
+            width: 100%;
         }
 
-        .container {
+        .contact-container {
             display: flex;
             justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white background for readability */
+            border-radius: 10px;
             padding: 40px;
         }
 
         /* Left side for picture */
         .left-side {
             width: 45%;
-            height: 500px;
+            height: 400px;
             background-image: url('About/contact/1708894893589_filtered-min-min-min.JPG'); /* Local image path */
             background-size: cover;
             background-position: center;
@@ -103,7 +115,7 @@
         Contact Us
     </header>
 
-    <div class="container">
+    <div class="contact-container">
         <!-- Left side (image) -->
         <div class="left-side"></div>
 
@@ -129,15 +141,13 @@
         </div>
     </div>
 
-       <div style="text-align: center;">
+    <div style="text-align: center;">
         <a href="https://gp-369.github.io/InnovationWallet/" style="color: #004080; text-decoration: none; font-weight: bold;">Home</a>
     </div>
 
     <footer>
         &copy; 2024 Guadalupe Prado
     </footer>
-</body>
-</html>
 
     <!-- JavaScript for Popup -->
     <script>
